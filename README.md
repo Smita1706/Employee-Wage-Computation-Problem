@@ -1,1 +1,1 @@
-Welcome to Employee Wage Computattion Program
+README file for UC 6
