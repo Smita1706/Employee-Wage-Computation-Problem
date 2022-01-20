@@ -1,26 +1,22 @@
 package WageComputation;
 
 public class EmpWageBuilderUC_2 {
-	public static void main(String[] args) {
+	public static final int IS_FULL_TIME = 1;
+	public static final int WAGE_PER_HOUR = 20;
 
-		// Constants
-		int IS_FULL_TIME = 1;
-		int WAGE_PER_HOUR = 20;
-        
-		
-        //Variables 
-        int SALARY = 0;
-        int WORKING_HOUR=0;
-        
-		// Computation
-		double empCheck = Math.floor(Math.random() * 10) % 2;
-		if (empCheck == IS_FULL_TIME)
-             WORKING_HOUR = 8;
+	public static void main(String[] args) {
+		int Salary = 0;
+		int WorkingHour = 0;
+		double EmpCheck;
+
+		EmpCheck = Math.floor(Math.random() * 10) % 2;
+		if (EmpCheck == IS_FULL_TIME)
+			WorkingHour = 8;
 		else 		    
-		     WORKING_HOUR = 0;
-		     SALARY=WAGE_PER_HOUR *WORKING_HOUR;
-		     System.out.println("Salary is : " + SALARY);
-		
-		}
+			WorkingHour = 0;
+		Salary = WAGE_PER_HOUR * WorkingHour;
+		System.out.println("Salary is : " + Salary);
+
+	}
 }
 
